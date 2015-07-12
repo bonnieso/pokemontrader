@@ -7,7 +7,7 @@ angular.module("pokemonApp")
   $stateProvider
     .state('home', {
       url: '/home',
-      templateUrl: '/views/home.html'
+      templateUrl: '/views/home.html',
     })
     .state('register', {
       url: '/register',
@@ -23,7 +23,8 @@ angular.module("pokemonApp")
     })
     .state('profile', {
       url: '/profile',
-      templateUrl: '/views/profile.html'
+      templateUrl: '/views/profile.html',
+      controller: "profileCtrl"
     })
     .state('settings', {
       url: '/settings',

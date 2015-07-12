@@ -1,9 +1,6 @@
-h1 Profile Settings
+h1 Update Friend Code
 .row
   .col-md-5.form.left-spacing
-    input.form-control.form-space(type='text', placeholder='purpleshirt', ng-model='username')
-    input.form-control.form-space(type='text', placeholder='Gary Oak', ng-model='trainerName')
+    h3 {{userName}}
     input.form-control.form-space(type='text', placeholder='LJI6B32BKJHQEQ', ng-model='friendCode')
-    input.form-control.form-space(type='text', placeholder='gary@mail.com', ng-model='email')
-    input.form-control.form-space(type='password', placeholder='********', ng-model='password')
-    button.btn.btn-info.btn-block(ng-click='updateProfile()') Update Profile
+    button.btn.btn-info.btn-block(ng-click='updateProfile(friendCode)') Update Friend Code

@@ -1,23 +1,10 @@
-h1 Trainer Profile
+img(src="{{userImage}}")
+h2 {{userName}}
 row
   .col-sm-12.trainer-info
-    p User Name: purpleshirt
-    p Trainer Name: Gary Oak
-    p Friend Code: LJI6B32BKJHQEQ
-    h3.trainer-pokemon Gary's Pokemon
+    p Friend Code: {{friendCode}}
+    h3.trainer-pokemon {{firstName}} Pokemon
     .row
-      .col-sm-2.all-each
-        img(src="http://pokeapi.co/media/img/6.png")
-        | Charizard
-      .col-sm-2.all-each
-        img(src="http://pokeapi.co/media/img/7.png")
-        | Squirtle
-      .col-sm-2.all-each
-        img(src="http://pokeapi.co/media/img/8.png")
-        | Wartortle
-      .col-sm-2.all-each
-        img(src="http://pokeapi.co/media/img/9.png")
-        | Blastoise
-      .col-sm-2.all-each
-        img(src="http://pokeapi.co/media/img/10.png")
-        | Caterpie
+      .col-sm-2.all-each(ng-repeat="pokemon in userPokemon")
+        img(src="{{pokemon.sprite}}")
+        | {{pokemon.name}}

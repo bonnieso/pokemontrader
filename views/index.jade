@@ -1,5 +1,5 @@
 doctype html
-html(ng-app="pokemonApp")
+html(ng-app="pokemonApp" ng-controller="navCtrl")
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
@@ -7,6 +7,8 @@ html(ng-app="pokemonApp")
   body
     nav.navbar.navbar-inverse.navbar-fixed-top
       #navbar.collapse.navbar-collapse
+        ul.nav.navbar-nav.navbar-left
+          li(style="color: red;") {{userName}}
         ul.nav.navbar-nav.navbar-right
           li
             a(ui-sref='allpokemon')
@@ -46,3 +48,5 @@ html(ng-app="pokemonApp")
       script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js')
       script(src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js')
       script(src='/javascripts/main.js')
+      script(src='/javascripts/index.js')
+      script(src='/javascripts/profilCtrl.js')
