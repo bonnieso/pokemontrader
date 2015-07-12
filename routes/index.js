@@ -3,7 +3,7 @@ var router = express.Router();
 var mongoose = require('mongoose');
 
 
-mongoose.connect(process.env.MONGO_URL);
+// mongoose.connect(process.env.MONGO_URL);
 
  // export MONGO_URL=mongodb://localhost/pokemontrader
 
@@ -17,19 +17,8 @@ var Traders = mongoose.model("Traders", traderSchema);
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    console.log(req.user);
-    var trader = new Traders({trainer_name: req.user.displayName});
-
-    trader.trainer_name = req.user.displayName;
-
-    trader.save(function(err, trainerName) {
-      if (err) {
-        console.log(err);
-        res.status(400).json({ error: "Validation Failed" });
-      }
-      console.log("new trainer:", trainerName);
-      res.json(trainerName);
-    });
+    // console.log(req.user);
+    res.render("index");
 });
 
 router.get('/loggedIn', function(req, res, next) {
@@ -52,20 +41,20 @@ router.post("/update", function(req, res){
   });
 });
 
-  // router.post("/trader", function(req, res) {
-  //   console.log("getting something");
-  //   var trader = new Traders({trainer_name: req.body.trainer_name});
-  //   console.log(req.body.trainer_name);
-  //
-  //   trader.trainer_name = req.body.trainer_name;
-  //
-  //   trader.save(function(err, trainerName) {
-  //     if (err) {
-  //       console.log(err);
-  //       res.status(400).json({ error: "Validation Failed" });
-  //     }
-  //     console.log("new trainer:", trainerName);
-  //     res.json(trainerName);
-  //   });
-  // });
+  router.post("/trader", function(req, res) {
+    console.log(req.user);
+    var trader = new Traders({trainer_name: req.user});
+    // console.log(req.body.trainer_name);
+
+    trader.trainer_name = req.user;
+
+    trader.save(function(err, trainerName) {
+      if (err) {
+        console.log(err);
+        res.status(400).json({ error: "Validation Failed" });
+      }
+      console.log("new trainer:", trainerName);
+      res.json(trainerName);
+    });
+  });
 module.exports = router;
