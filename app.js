@@ -19,12 +19,13 @@ var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 passport.use(new GoogleStrategy({
     clientID: '143641837739-m3marmfr4698ulkcolipj1uak33rnm67.apps.googleusercontent.com',
     clientSecret: 'azizl85BpbPkWePufu44qeWQ',
-    callbackURL: "http://127.0.0.1:3000/auth/google/callback"
+    callbackURL: "http://localhost:3000/auth/google/callback"
   },
   function(accessToken, refreshToken, profile, done) {
-    User.findOrCreate({ googleId: profile.id }, function (err, user) {
-      return done(err, user);
-    });
+//    User.findOrCreate({ googleId: profile.id }, function (err, user) {
+//      return done(err, user);
+//    });
+    done(null, profile);
   }
 ));
 
@@ -41,6 +42,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(session({secret: 'chococat'}));
+
+//require('./config/passport')();
+
 app.use(passport.initialize());
 app.use(passport.session());
 
