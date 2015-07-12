@@ -1,7 +1,8 @@
-h1 Register as a Trainer
+h1 Become a Trainer!
 .row
-  .col-md-5.form.left-spacing
-    input.form-control.form-space(type='text', placeholder='Username', ng-model='username')
-    input.form-control.form-space(type='text', placeholder='Email', ng-model='email')
-    input.form-control.form-space(type='password', placeholder='Password', ng-model='password')
-    button.btn.btn-info.btn-block(ng-click='register()') Register
+  .col-md-5.form.left-spacing(style="text-decoration: none; color: #222222;")
+    a(href="/auth/google")
+      | Register
+    p OR
+    a(href="/auth/google")
+      | Login

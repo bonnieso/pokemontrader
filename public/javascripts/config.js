@@ -8,6 +8,7 @@ angular.module("pokemonApp")
     .state('home', {
       url: '/home',
       templateUrl: '/views/home.html',
+      resolve:
     })
     .state('register', {
       url: '/register',
