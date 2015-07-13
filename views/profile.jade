@@ -2,12 +2,12 @@
   .col-md-12
     .well.well-lg.add-button-space
       h2.text-center Trainer Profile
-      h4 Trainer Name: 
+      h4 Trainer Name:
       p.profile-space {{userName}}
       h4 Friend Code:
-      p.profile-space ILOVEPIKACHU
+      a.profile-space(ng-click="loadPokemon()") ILOVEPIKACHU
       h4.trainer-pokemon {{firstName}}'s Pokemon:
       .row
-        .col-sm-2.all-each(ng-repeat="pokemon in userPokemon")
+        .col-sm-2.all-each(ng-repeat="pokemon in userPokemon track by index")
           img(src="{{pokemon.sprite}}")
           | {{pokemon.name}}

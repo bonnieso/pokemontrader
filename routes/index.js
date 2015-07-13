@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
+var pokedex = require('../pokemonz.json');
 // var logout = require("express-passport-logout")
 
 mongoose.connect(process.env.MONGO_URL);
@@ -23,8 +24,8 @@ var traderSchema = mongoose.Schema({
 		}
 	}]
 });
-
-var Traders = mongoose.model("Traders", traderSchema);
+// var pokemonSchema = mongoose.Schema
+// var Traders = mongoose.model("Traders", traderSchema);
 
 
 router.get('/logout', function(req, res) {
@@ -32,6 +33,11 @@ router.get('/logout', function(req, res) {
 	req.logout();
 	res.redirect('/');
 	// res.render('/register');
+});
+
+router.get('/pokedex', function(req, res){
+  console.log("pokedex hit");
+  res.json(pokedex.pokemon);
 });
 
 /* GET home page. */
@@ -66,7 +72,7 @@ router.get('/', function (req, res, next) {
 router.get('/loggedIn', function(req, res, next) {
 	console.log("hello");
 	console.log(req.user);
-	res.json(req.user)
+	res.json(req.user);
 });
 
 router.post("/updateuser", function(req, res) {
