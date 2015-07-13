@@ -7,6 +7,6 @@
 .well.well-lg.add-button-space.text-center.slimshady
   h1 Pokemon Available for Trade:
   .row
-    .col-sm-2.all-each(ng-repeat="pokemon in pokedex track by index | filter: pokemonName")
+    .col-sm-2.all-each(ng-repeat="pokemon in pokedex | filter: pokemonName")
       img(src="{{pokemon.sprite}}")
       | {{pokemon.name}}
