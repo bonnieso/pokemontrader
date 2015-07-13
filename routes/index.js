@@ -3,7 +3,7 @@ var router = express.Router();
 var mongoose = require('mongoose');
 // var logout = require("express-passport-logout")
 
-// mongoose.connect(process.env.MONGO_URL);
+mongoose.connect(process.env.MONGO_URL);
 
 // export MONGO_URL=mongodb://localhost/pokemontrader
 
