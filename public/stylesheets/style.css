@@ -1,46 +1,42 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background: url(https://pokewalls.files.wordpress.com/2011/09/7squirtle-alt1920x1080.jpg) no-repeat center center fixed; 
+  background: url(https://pokewalls.files.wordpress.com/2011/09/7squirtle-alt1920x1080.jpg) no-repeat center center fixed;
   background-size: cover;
 }
-
 a {
   color: #00B7FF;
 }
-
-.register-box{
+.register-box {
   margin-top: 30%;
 }
-
-.register-button-space{
+.register-button-space {
   margin-top: 10%;
 }
-
-.add-button-space{
+.add-button-space {
   margin-top: 5%;
 }
-
-.profile-space{
+.profile-space {
   margin-bottom: 3%;
 }
-
-.username{
+.username {
   font-size: 1.5em;
   color: #919191;
   margin-left: 30px;
   margin-top: 10px;
 }
-
-.pokemon-menu{
+.pokemon-menu {
   margin-right: 5%;
 }
-
-.all-each{
+.all-each {
   border: 2px solid #919191;
   margin-right: 1%;
   margin-left: 2%;
   margin-bottom: 2%;
+  background-color: #FFFFFF;
   text-align: center;
   padding-bottom: 1%;
+}
+.well.well-lg.add-button-space.text-center.ng-scope {
+  background-color: rgba(255, 255, 255, .4);
 }
