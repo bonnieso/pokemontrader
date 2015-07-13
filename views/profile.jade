@@ -1,10 +1,13 @@
-img(src="{{userImage}}")
-h2 {{userName}}
-row
-  .col-sm-12.trainer-info
-    p Friend Code: {{friendCode}}
-    h3.trainer-pokemon {{firstName}} Pokemon
-    .row
-      .col-sm-2.all-each(ng-repeat="pokemon in userPokemon")
-        img(src="{{pokemon.sprite}}")
-        | {{pokemon.name}}
+.row
+  .col-md-12
+    .well.well-lg.add-button-space
+      h2.text-center Trainer Profile
+      h4 Trainer Name: 
+      p.profile-space {{userName}}
+      h4 Friend Code:
+      p.profile-space ILOVEPIKACHU
+      h4.trainer-pokemon {{firstName}}'s Pokemon:
+      .row
+        .col-sm-2.all-each(ng-repeat="pokemon in userPokemon")
+          img(src="{{pokemon.sprite}}")
+          | {{pokemon.name}}

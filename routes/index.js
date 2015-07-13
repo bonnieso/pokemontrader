@@ -3,7 +3,7 @@ var router = express.Router();
 var mongoose = require('mongoose');
 // var logout = require("express-passport-logout")
 
-mongoose.connect(process.env.MONGO_URL);
+//mongoose.connect(process.env.MONGO_URL);
 
 // export MONGO_URL=mongodb://localhost/pokemontrader
 
@@ -55,13 +55,14 @@ router.get('/', function(req, res, next) {
 					error: "Trainer Not Saved!"
 				});
 			}
-			// res.render("index");
+//			 res.render("index");
 			console.log('success savedEntry', savedEntry);
 		});
+      res.render("index");
 	}
-	res.render("index");
-	console.log(req.user);
+
 });
+
 
 router.get('/loggedIn', function(req, res, next) {
 	console.log("hello");
