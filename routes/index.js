@@ -44,7 +44,7 @@ router.get('/loggedIn', function(req, res, next) {
 	res.json(req.user)
 });
 
-router.post("/update", function(req, res) {
+router.post("/updateuser", function(req, res) {
 	Traders.findOne({
 		trainer_name: req.user.displayName
 	}, function(err, doc) {

@@ -28,7 +28,8 @@ angular.module("pokemonApp")
     })
     .state('settings', {
       url: '/settings',
-      templateUrl: '/views/settings.html'
+      templateUrl: '/views/settings.html',
+      controller: 'settingsCtrl'
     })
     .state('addpokemon', {
       url: '/addpokemon',
