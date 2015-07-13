@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
+var pokedex = require('../pokemonz.json')
 // var logout = require("express-passport-logout")
 
 mongoose.connect(process.env.MONGO_URL);
@@ -33,7 +34,9 @@ router.get('/logout', function(req, res) {
 	res.redirect('/');
 	// res.render('/register');
 });
-
+router.get('/pokedex', function(req, res){
+  res.json(pokedex)
+})
 /* GET home page. */
 router.get('/', function(req, res, next) {
 	if (!req.user) {
