@@ -1,8 +1,31 @@
-h1 Become a Trainer!
-.row
-  .col-md-5.form.left-spacing(style="text-decoration: none; color: #222222;")
-    a(href="/auth/google")
-      | Register
-    p OR
-    a(href="/auth/google")
-      | Login
+
+doctype html
+html(ng-app="pokemonApp" ng-controller="navCtrl")
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel="stylesheet",  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
+  body
+    nav.navbar.navbar-inverse.navbar-fixed-top
+      #navbar.collapse.navbar-collapse
+        ul.nav.navbar-nav.navbar-left
+          li(style="color: red;")
+    br
+    br
+    .container.text-center(style="background-color: #18314F; width: 300px; height: 350px; border-radius: 4px;")
+      h1(style="color: white;") Become a Trainer!
+      .row
+        .col-md-5.form.left-spacing(style="text-decoration: none; color: white; let: 0px; right: 0px; font-size: 30px;")
+          a(href="/auth/google" style="color: white;")
+            | Register
+          p OR
+          a(href="/auth/google" style="color: white;")
+            | Login
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js')
+      script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+      script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js')
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js')
+      script(src='/javascripts/config.js')
+      script(src='/javascripts/main.js')
+      script(src='/javascripts/index.js')
+      script(src='/javascripts/profilCtrl.js')
