@@ -27,7 +27,7 @@ html(ng-app="pokemonApp" ng-controller="navCtrl")
               i.glyphicon.glyphicon-plus
               | Profile Settings
           li
-            a(ui-sref='#')
+            a(ng-click="logout()")
               i.glyphicon.glyphicon-plus
               | Logout
 

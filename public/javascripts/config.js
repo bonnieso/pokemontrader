@@ -11,7 +11,10 @@ angular.module("pokemonApp")
     })
     .state('register', {
       url: '/register',
-      templateUrl: '/views/register.html'
+      templateUrl: '/views/register.html',
+    })
+    .state('logout', {
+      url: '/logout'
     })
     .state('login', {
       url: '/login',
