@@ -1,7 +1,12 @@
 .row
-  .col-sm-5
+  .col-sm-12
     .well.well-lg.register-box
-      h1 Add Pokemon
-      input.form-control.form-space.register-button-space(type='text', placeholder="Pokemon Name", ng-model='pokemonName')
-      button.btn.btn-info.btn-block.add-button-space(ng-click='addPokemon()') Add Pokemon
-        
+      h3 Search pokemon available to trade
+      input.form-control.form-space(type='text', placeholder="Pokemon Name", ng-model='pokemonName')
+      button.btn.btn-info.btn-block(ng-click='searchPokemon(pokemonName)') Search Pokemon
+.well.well-lg.add-button-space.text-center.slimshady
+  h1 Pokemon Available for Trade:
+  .row
+    .col-sm-2.all-each(ng-repeat="pokemon in pokedex track by index | filter: pokemonName")
+      img(src="{{pokemon.sprite}}")
+      | {{pokemon.name}}

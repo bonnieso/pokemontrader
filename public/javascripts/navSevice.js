@@ -1,5 +1,5 @@
 angular.module('pokemonApp')
-	.service('navService', function($http) {
+	.service('navService', function($http, $rootScope) {
     console.log("inservice");
 		// return {
 		// 	getLoggedIn: function() {

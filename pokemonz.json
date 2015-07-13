@@ -1,224 +1,273 @@
-[{
-	name: "Bulbasaur",
-	sprite: "http://pokeapi.co/media/img/1.png",
-	abilities: [{
-		name: "chlorophyll",
-		resource_uri: "http://pokeapi.co/api/v1/ability/34/"
-	}, {
-		name: "overgrow",
-		resource_uri: "http://pokeapi.co/api/v1/ability/65/"
-	}]
-}, {
-	name: "Ivysaur",
-	sprite: "http://pokeapi.co/media/img/2.png",
-	abilities: [{
-		name: "chlorophyll",
-		resource_uri: "http://pokeapi.co/api/v1/ability/34/"
-	}, {
-		name: "overgrow",
-		resource_uri: "http://pokeapi.co/api/v1/ability/65/"
-	}]
-},
 {
- name: "Venasaur",
- sprite: "http://pokeapi.co/media/img/3.png",
- abilities: [{
-   name: "chlorophyll",
-   resource_uri: "http://pokeapi.co/api/v1/ability/34/"
- }, {
-   name: "overgrow",
-   resource_uri: "http://pokeapi.co/api/v1/ability/65/"
- }]
-},
-{
-	name: "Charmander",
-	 sprite: "http://pokeapi.co/media/img/4.png",
-	abilities: [{
-		name: "chlorophyll",
-		resource_uri: "http://pokeapi.co/api/v1/ability/34/"
-	}, {
-		name: "overgrow",
-		resource_uri: "http://pokeapi.co/api/v1/ability/65/"
-	}]
-}, {
-	name: "Charmeleon",
-	 sprite: "http://pokeapi.co/media/img/5.png",
-	abilities: [{
-		name: "chlorophyll",
-		resource_uri: "http://pokeapi.co/api/v1/ability/34/"
-	}, {
-		name: "overgrow",
-		resource_uri: "http://pokeapi.co/api/v1/ability/65/"
-	}]
-}, {
-	name: "Charizard",
-	 sprite: "http://pokeapi.co/media/img/6.png",
-	abilities: [{
-		name: "chlorophyll",
-		resource_uri: "http://pokeapi.co/api/v1/ability/34/"
-	}, {
-		name: "overgrow",
-		resource_uri: "http://pokeapi.co/api/v1/ability/65/"
-	}]
-}, {
-	name: "Squirtle",
- sprite: "http://pokeapi.co/media/img/7.png",
-	abilities: [{
-		name: "chlorophyll",
-		resource_uri: "http://pokeapi.co/api/v1/ability/34/"
-	}, {
-		name: "wartortle",
-		resource_uri: "http://pokeapi.co/api/v1/ability/65/"
-	}]
-}, {
-	name: "Blastoise",
-	 sprite: "http://pokeapi.co/media/img/8.png",
-	abilities: [{
-		name: "chlorophyll",
-		resource_uri: "http://pokeapi.co/api/v1/ability/34/"
-	}, {
-		name: "overgrow",
-		resource_uri: "http://pokeapi.co/api/v1/ability/65/"
-	}]
-}, {
-	name: "caterpie",
-	 sprite: "http://pokeapi.co/media/img/9.png",
-	abilities: [{
-		name: "chlorophyll",
-		resource_uri: "http://pokeapi.co/api/v1/ability/34/"
-	}, {
-		name: "overgrow",
-		resource_uri: "http://pokeapi.co/api/v1/ability/65/"
-	}]
-}, {
-	name: "Metapod",
-	 sprite: "http://pokeapi.co/media/img/10.png",
-	abilities: [{
-		name: "chlorophyll",
-		resource_uri: "http://pokeapi.co/api/v1/ability/34/"
-	}, {
-		name: "overgrow",
-		resource_uri: "http://pokeapi.co/api/v1/ability/65/"
-	}]
-}, {
-	name: "Bulbasaur",
-	 sprite: "http://pokeapi.co/media/img/11.png",
-	abilities: [{
-		name: "chlorophyll",
-		resource_uri: "http://pokeapi.co/api/v1/ability/34/"
-	}, {
-		name: "overgrow",
-		resource_uri: "http://pokeapi.co/api/v1/ability/65/"
-	}]
-}, {
-	name: "Bulbasaur",
-	 sprite: "http://pokeapi.co/media/img/12.png",
-	abilities: [{
-		name: "chlorophyll",
-		resource_uri: "http://pokeapi.co/api/v1/ability/34/"
-	}, {
-		name: "overgrow",
-		resource_uri: "http://pokeapi.co/api/v1/ability/65/"
-	}]
-}, {
-	name: "Bulbasaur",
-	sprite: "",
-	abilities: [{
-		name: "chlorophyll",
-		resource_uri: "http://pokeapi.co/api/v1/ability/34/"
-	}, {
-		name: "overgrow",
-		resource_uri: "http://pokeapi.co/api/v1/ability/65/"
-	}]
-}, {
-	name: "Bulbasaur",
-	sprite: "",
-	abilities: [{
-		name: "chlorophyll",
-		resource_uri: "http://pokeapi.co/api/v1/ability/34/"
-	}, {
-		name: "overgrow",
-		resource_uri: "http://pokeapi.co/api/v1/ability/65/"
-	}]
-}, {
-	name: "Bulbasaur",
-	abilities: [{
-		name: "chlorophyll",
-		resource_uri: "http://pokeapi.co/api/v1/ability/34/"
-	}, {
-		name: "overgrow",
-		resource_uri: "http://pokeapi.co/api/v1/ability/65/"
-	}]
-}, {
-	name: "Bulbasaur",
-	abilities: [{
-		name: "chlorophyll",
-		resource_uri: "http://pokeapi.co/api/v1/ability/34/"
-	}, {
-		name: "overgrow",
-		resource_uri: "http://pokeapi.co/api/v1/ability/65/"
-	}]
-}, {
-	name: "Bulbasaur",
-	abilities: [{
-		name: "chlorophyll",
-		resource_uri: "http://pokeapi.co/api/v1/ability/34/"
-	}, {
-		name: "overgrow",
-		resource_uri: "http://pokeapi.co/api/v1/ability/65/"
-	}]
-}, {
-	name: "Bulbasaur",
-	abilities: [{
-		name: "chlorophyll",
-		resource_uri: "http://pokeapi.co/api/v1/ability/34/"
-	}, {
-		name: "overgrow",
-		resource_uri: "http://pokeapi.co/api/v1/ability/65/"
-	}]
-}, {
-	name: "Bulbasaur",
-	abilities: [{
-		name: "chlorophyll",
-		resource_uri: "http://pokeapi.co/api/v1/ability/34/"
-	}, {
-		name: "overgrow",
-		resource_uri: "http://pokeapi.co/api/v1/ability/65/"
-	}]
-}, {
-	name: "Bulbasaur",
-	abilities: [{
-		name: "chlorophyll",
-		resource_uri: "http://pokeapi.co/api/v1/ability/34/"
-	}, {
-		name: "overgrow",
-		resource_uri: "http://pokeapi.co/api/v1/ability/65/"
-	}]
-}, {
-	name: "Bulbasaur",
-	abilities: [{
-		name: "chlorophyll",
-		resource_uri: "http://pokeapi.co/api/v1/ability/34/"
-	}, {
-		name: "overgrow",
-		resource_uri: "http://pokeapi.co/api/v1/ability/65/"
-	}]
-}, {
-	name: "Bulbasaur",
-	abilities: [{
-		name: "chlorophyll",
-		resource_uri: "http://pokeapi.co/api/v1/ability/34/"
-	}, {
-		name: "overgrow",
-		resource_uri: "http://pokeapi.co/api/v1/ability/65/"
-	}]
-}, {
-	name: "Bulbasaur",
-	abilities: [{
-		name: "chlorophyll",
-		resource_uri: "http://pokeapi.co/api/v1/ability/34/"
-	}, {
-		name: "overgrow",
-		resource_uri: "http://pokeapi.co/api/v1/ability/65/"
-	}]
-} ]
+	"pokemon": [{
+			"name": "Bulbasaur",
+      "userID": "105626975027589163244",
+			"pokemonID": "1",
+			"sprite": "http://pokeapi.co/media/img/1.png",
+			"abilities": [{
+				"name": "chlorophyll",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/34/"
+			}, {
+				"name": "overgrow",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
+			}]
+
+		}, {
+			"name": "Ivysaur",
+      "userID": "105626975027589163244",
+			"pokemonID": "2",
+			"sprite": "http://pokeapi.co/media/img/2.png",
+			"abilities": [{
+				"name": "chlorophyll",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/34/"
+			}, {
+				"name": "overgrow",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
+			}]
+		}, {
+			"name": "Venasaur",
+      "userID": "105626975027589163244",
+			"pokemonID": "3",
+			"sprite": "http://pokeapi.co/media/img/3.png",
+			"abilities": [{
+				"name": "chlorophyll",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/34/"
+			}, {
+				"name": "overgrow",
+        "userID": "105626975027589163244",
+
+				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
+			}]
+		}, {
+			"name": "Charmander",
+      "userID": "105626975027589163244",
+			"pokemonID": "4",
+			"sprite": "http://pokeapi.co/media/img/4.png",
+			"abilities": [{
+				"name": "chlorophyll",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/34/"
+			}, {
+				"name": "overgrow",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
+			}]
+		}, {
+			"name": "Charmeleon",
+      "userID": "105626975027589163244",
+			"pokemonID": "5",
+			"sprite": "http://pokeapi.co/media/img/5.png",
+			"abilities": [{
+				"name": "chlorophyll",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/34/"
+			}, {
+				"name": "overgrow",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
+			}]
+		}, {
+			"name": "Charizard",
+      "userID": "105626975027589163244",
+			"pokemonID": "7",
+			"sprite": "http://pokeapi.co/media/img/6.png",
+			"abilities": [{
+				"name": "chlorophyll",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/34/"
+			}, {
+				"name": "overgrow",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
+			}]
+		}, {
+			"name": "Squirtle",
+      "userID": "105626975027589163244",
+			"pokemonID": "8",
+			"sprite": "http://pokeapi.co/media/img/7.png",
+			"abilities": [{
+				"name": "chlorophyll",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/34/"
+			}, {
+				"name": "wartortle",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
+			}]
+		}, {
+			"name": "Blastoise",
+      "userID": "fake626975027589163244",
+			"pokemonID": "9",
+			"sprite": "http://pokeapi.co/media/img/8.png",
+			"abilities": [{
+				"name": "chlorophyll",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/34/"
+			}, {
+				"name": "overgrow",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
+			}]
+		}, {
+			"name": "caterpie",
+      "userID": "fake626975027589163244",
+			"pokemonID": "10",
+			"sprite": "http://pokeapi.co/media/img/9.png",
+			"abilities": [{
+				"name": "chlorophyll",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/34/"
+			}, {
+				"name": "overgrow",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
+			}]
+		}, {
+			"name": "Metapod",
+      "userID": "fake626975027589163244",
+			"pokemonID": "11",
+			"sprite": "http://pokeapi.co/media/img/10.png",
+			"abilities": [{
+				"name": "chlorophyll",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/34/"
+			}, {
+				"name": "overgrow",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
+			}]
+		}, {
+			"name": "Bulbasaur",
+      "userID": "fake626975027589163244",
+			"pokemonID": "12",
+			"sprite": "http://pokeapi.co/media/img/11.png",
+			"abilities": [{
+				"name": "chlorophyll",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/34/"
+			}, {
+				"name": "overgrow",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
+			}]
+		}, {
+			"name": "Bulbasaur",
+      "userID": "fake626975027589163244",
+			"pokemonID": "13",
+			"sprite": "http://pokeapi.co/media/img/12.png",
+			"abilities": [{
+				"name": "chlorophyll",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/34/"
+			}, {
+				"name": "overgrow",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
+			}]
+		}, {
+			"name": "Bulbasaur",
+      "userID": "fake626975027589163244",
+			"pokemonID": "14",
+			"sprite": "",
+			"abilities": [{
+				"name": "chlorophyll",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/34/"
+			}, {
+				"name": "overgrow",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
+			}]
+		}, {
+			"name": "Bulbasaur",
+      "userID": "fake626975027589163244",
+			"pokemonID": "15",
+			"sprite": "",
+			"abilities": [{
+				"name": "chlorophyll",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/34/"
+			}, {
+				"name": "overgrow",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
+			}]
+		}, {
+			"name": "Bulbasaur",
+      "userID": "fake626975027589163244",
+			"pokemonID": "16",
+			"abilities": [{
+				"name": "chlorophyll",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/34/"
+			}, {
+				"name": "overgrow",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
+			}]
+		}, {
+			"name": "Bulbasaur",
+      "userID": "fake626975027589163244",
+			"pokemonID": "17",
+			"abilities": [{
+				"name": "chlorophyll",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/34/"
+			}, {
+				"name": "overgrow",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
+			}]
+		}, {
+			"name": "Bulbasaur",
+      "userID": "fake626975027589163244",
+			"pokemonID": "18",
+			"abilities": [{
+				"name": "chlorophyll",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/34/"
+			}, {
+				"name": "overgrow",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
+			}]
+		}, {
+			"name": "Bulbasaur",
+      "userID": "fake626975027589163244",
+			"pokemonID": "19",
+			"abilities": [{
+				"name": "chlorophyll",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/34/"
+			}, {
+				"name": "overgrow",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
+			}]
+		}, {
+			"name": "Bulbasaur",
+      "userID": "fake626975027589163244",
+			"pokemonID": "20",
+			"abilities": [{
+				"name": "chlorophyll",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/34/"
+			}, {
+				"name": "overgrow",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
+			}]
+		}, {
+			"name": "Bulbasaur",
+      "userID": "fake626975027589163244",
+			"pokemonID": "21",
+			"abilities": [{
+				"name": "chlorophyll",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/34/"
+			}, {
+				"name": "overgrow",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
+			}]
+		}, {
+			"name": "Bulbasaur",
+      "userID": "105626975027589163244",
+			"pokemonID": "22",
+			"abilities": [{
+				"name": "chlorophyll",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/34/"
+			}, {
+				"name": "overgrow",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
+			}]
+		}, {
+			"name": "Bulbasaur",
+      "userID": "fake626975027589163244",
+			"pokemonID": "23",
+			"abilities": [{
+				"name": "chlorophyll",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/34/"
+			}, {
+				"name": "overgrow",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
+			}]
+		}, {
+			"name": "Bulbasaur",
+			"pokemonID": "24",
+      "userID": "fake626975027589163244",
+			"abilities": [{
+				"name": "chlorophyll",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/34/"
+			}, {
+				"name": "overgrow",
+				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
+			}]
+		}]
+}
