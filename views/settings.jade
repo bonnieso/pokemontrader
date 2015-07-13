@@ -1,7 +1,8 @@
-h1 Update Friend Code
 .row
   .col-md-5.form.left-spacing
-    h3 {{userName}}
-    form(ng-submit="updateProfile(friendCode)")
-      input.form-control.form-space(type='text', placeholder='LJI6B32BKJHQEQ', ng-model='friendCode')
-      button.btn.btn-info.btn-block(type="submit") Update Friend Code
+    .well.well-lg.register-box
+      h1 Update Profile
+      form.register-button-space(ng-submit="updateProfile(friendCode)")
+        label Friend Code
+        input.form-control.form-space(type='text', placeholder='Enter Friend Code', ng-model='friendCode')
+        button.btn.btn-info.btn-block.add-button-space(type="submit") Update Profile

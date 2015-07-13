@@ -4,32 +4,32 @@ html(ng-app="pokemonApp" ng-controller="navCtrl")
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel="stylesheet",  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
-  body(style="background-image: url('https://pokewalls.files.wordpress.com/2011/09/7squirtle-alt1920x1080.jpg');")
+  body
     nav.navbar.navbar-inverse.navbar-fixed-top
-      #navbar.collapse.navbar-collapse
+      #navbar.collapse.navbar-collapse.pokemon-menu
         ul.nav.navbar-nav.navbar-left
-          li(style="color: red;") {{userName}}
+          li.username(ui-sref='home') {{userName}}
         ul.nav.navbar-nav.navbar-right
           li
             a(ui-sref='allpokemon')
-              i.glyphicon.glyphicon-plus
-              | Browse Pokemon
+              i.glyphicon.glyphicon-th-large
+              | &nbsp;&nbsp;Browse Pokemon
           li
             a(ui-sref='addpokemon')
               i.glyphicon.glyphicon-plus
-              | Add Pokemon
+              | &nbsp;&nbsp;Add Pokemon
           li
             a(ui-sref='profile')
-              i.glyphicon.glyphicon-plus
-              | Trainer Profile
+              i.glyphicon.glyphicon-user
+              | &nbsp;&nbsp;Trainer Profile
           li
             a(ui-sref='settings')
-              i.glyphicon.glyphicon-plus
-              | Profile Settings
+              i.glyphicon.glyphicon-cog
+              | &nbsp;&nbsp;Profile Settings
           li
             a(ng-click="logout()")
-              i.glyphicon.glyphicon-plus
-              | Logout
+              i.glyphicon.glyphicon-remove
+              | &nbsp;&nbsp;Logout
 
     .container
       .row
@@ -41,5 +41,5 @@ html(ng-app="pokemonApp" ng-controller="navCtrl")
       script(src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js')
       script(src='/javascripts/config.js')
       script(src='/javascripts/index.js')
-      script(src='/javascripts/profilCtrl.js')
+      script(src='/javascripts/profileCtrl.js')
       script(src='/javascripts/settingsCtrl.js')

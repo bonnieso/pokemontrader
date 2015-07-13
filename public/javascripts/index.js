@@ -2,6 +2,7 @@ angular.module('pokemonApp')
 	.controller("navCtrl", function($scope, $http, $state, $rootScope) {
 		$http.get("http://localhost:3000/loggedIn").then(function(resp) {
 			$rootScope.userName = resp.data.displayName;
+            $rootScope.firstName = resp.data._json.name.givenName;
 		}).catch(function(err) {
 			console.log(err)
 		})
