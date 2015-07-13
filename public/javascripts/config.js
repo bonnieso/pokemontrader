@@ -3,7 +3,7 @@ angular.module("pokemonApp", ['ui.router']);
 angular.module("pokemonApp")
 
   .config(function ($stateProvider, $urlRouterProvider) {
-  $urlRouterProvider.otherwise('/home');
+  $urlRouterProvider.otherwise('/');
   $stateProvider
     .state('home', {
       url: '/home',
@@ -23,6 +23,11 @@ angular.module("pokemonApp")
     .state('allpokemon', {
       url: '/allpokemon',
       templateUrl: '/views/allpokemon.html'
+    })
+    .state('newuser', {
+      url: '/newuser',
+      templateUrl: '/views/newuser.html',
+      controller: "newUserCtrl"
     })
     .state('profile', {
       url: '/profile',
