@@ -4,7 +4,8 @@ var mongoose = require('mongoose');
 var pokedex = require('../pokemonz.json');
 // var logout = require("express-passport-logout")
 
-mongoose.connect("mongodb://heroku_5q5z6sdf:gct7cldj152qh54rdvvbcmah0n@ds047612.mongolab.com:47612/heroku_5q5z6sdf");
+
+mongoose.connect(process.env.MONGOLAB_URI);
 
 // export MONGO_URL=mongodb://localhost/pokemontrader
 var pokemonSchema = mongoose.Schema({

@@ -12,12 +12,13 @@ html(ng-app="pokemonApp" ng-controller="newUserCtrl")
       .row
         .col-xs-12
           h1 Register as a Trainer
-            .row
-              .col-md-5
-                form(ng-submit='signup(user)')
-                  input.form-control.form-space(type='text', placeholder='Trainer Name', ng-model='user.trainername')
-                  input.form-control.form-space(type='text', placeholder='Friend Code', ng-model='user.friendcode')
-                  button.btn.btn-info.btn-block(type='submit') Sign Up
+          .row
+            .col-md-5
+              form(ng-submit='signup(user)')
+                input.form-control.form-space(type='text', placeholder='Trainer Name', ng-model='user.trainername')
+                input.form-control.form-space(type='text', placeholder='Friend Code', ng-model='user.friendcode')
+                button.btn.btn-info.btn-block(type='submit') Sign Up
+          p The redirect doesn't work, but you're signed up after you submit. Please refresh the homepage to proceed.
       script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js')
       script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
       script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js')
