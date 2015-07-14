@@ -4,7 +4,8 @@ var mongoose = require('mongoose');
 var pokedex = require('../pokemonz.json');
 // var logout = require("express-passport-logout")
 
-mongoose.connect(process.env.MONGO_URL);
+//mongoose.connect(process.env.MONGO_URL);
+mongoose.connect(process.env.MONGOLAB_URI);
 
 // export MONGO_URL=mongodb://localhost/pokemontrader
 

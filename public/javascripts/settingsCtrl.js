@@ -8,8 +8,6 @@ angular.module('pokemonApp')
           console.log("adding this data:", data);
           $scope.trainerName = data.trainer_name;
           $scope.friendCode = data.friend_code;
-          $scope.user = "";
-        
         })
         .catch(function(err) {
           console.log(err);
