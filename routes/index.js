@@ -4,9 +4,17 @@ var mongoose = require('mongoose');
 var pokedex = require('../pokemonz.json');
 // var logout = require("express-passport-logout")
 
-//mongoose.connect(process.env.MONGO_URL);
+mongoose.connect("mongodb://heroku_5q5z6sdf:gct7cldj152qh54rdvvbcmah0n@ds047612.mongolab.com:47612/heroku_5q5z6sdf");
 
 // export MONGO_URL=mongodb://localhost/pokemontrader
+var pokemonSchema = mongoose.Schema({
+	name: {type: String, required: true},
+	userID: {type: String},
+	pokemonID: {type: Number},
+	sprite: {type: String},
+	abilities:[{type: String}]
+});
+
 
 var traderSchema = mongoose.Schema({
 	trainer_name: {
@@ -25,7 +33,8 @@ var traderSchema = mongoose.Schema({
 	}]
 });
 // var pokemonSchema = mongoose.Schema
-// var Traders = mongoose.model("Traders", traderSchema);
+ var Traders = mongoose.model("Traders", traderSchema);
+ var Pokemon = mongoose.model("Pokemon", pokemonSchema);
 
 
 router.get('/logout', function(req, res) {
@@ -37,11 +46,13 @@ router.get('/logout', function(req, res) {
 
 router.get("/onepokemon/:slug", function(req, res){
 	console.log("backend hit");
-	console.log("req:",req.params);
-	var pokedex = JSON.parse(pokedex.pokemon);
-	console.log(pokedex);
-  pokedex.forEach(function(pokemon){
-		if(pokemon.name === req.params.slug){
+	// var Slug = JSON.stringify(req.params.slug);
+	// var parsedSlug =JSON.parse(Slug)
+	// console.log("parsedSlug", parsedSlug);
+	console.log("this is pokedex:", pokedex.pokemon);
+  pokedex.pokemon.forEach(function(pokemon){
+		console.log("pokemon!", pokemon);
+		if(pokemon.name == req.params.slug){
 			console.log("this Pokemon:", pokemon);
 			res.json(pokemon);
 		}
@@ -54,33 +65,34 @@ router.get('/pokedex', function(req, res){
   console.log("pokedex hit");
   res.json(pokedex.pokemon);
 });
-/* GET home page. */
-router.get('/', function(req, res, next) {
-	if (!req.user) {
-		res.render("register");
-	} else {
-// 		var trader = new Traders({
-// 			trainer_name: req.user.displayName,
-// 			email: req.user.emails[0].value
-// 		});
-// 		Traders.findOneAndUpdate({
-// 			email: req.user.emails[0].value
-// 		}, trader, {
-// 			upsert: true,
-// 			new: true
-// 		}, function(err, savedEntry) {
-// 			if (err) {
-// 				console.log(err);
-// 				res.status(400).json({
-// 					error: "Trainer Not Saved!"
-// 				});
-// 			}
-// //			 res.render("index");
-// 			console.log('success savedEntry', savedEntry);
-// 		});
-      res.render("index");
-	 }
 
+router.get("")
+/* GET home page. */
+router.get('/', function (req, res, next) {
+  console.log("here");
+  //check if user email is in database.
+  //if it is, bring them to their trainer page with their info (/profile)
+  //if not, bring them to a sign in page where they can add (trainer name and friend code)
+ if (req.user){
+   console.log("in /", req.user);
+   Traders.findOne({email: req.user.emails[0].value }, function(error, trader){
+     if (error) {
+       console.log(error);
+       res.status(500);
+       return;
+     }
+     if (!trader) {
+       console.log("No trader");
+       res.render('newuser');
+       return;
+     }
+     res.render('index');
+     return;
+   });
+   return;
+ }
+ res.render('register');
+//  res.render('index');
 });
 
 
@@ -92,9 +104,10 @@ router.get('/loggedIn', function(req, res, next) {
 
 router.post("/updateuser", function(req, res) {
 	Traders.findOne({
-		trainer_name: req.user.displayName
+		email: req.user.emails[0].value
 	}, function(err, doc) {
-		doc.friend_code = req.body.code;
+        doc.trainer_name = req.body.trainerName;
+		doc.friend_code = req.body.friendCode;
 		doc.save(function(err, code) {
 			if (err) {
 				console.log(err);
@@ -106,6 +119,32 @@ router.post("/updateuser", function(req, res) {
 			res.json(code);
 		});
 	});
+});
+
+router.post('/addnewuser', function(req, res){
+  var trader = new Traders({
+         trainer_name: req.body.trainername,
+         email: req.user.emails[0].value,
+         friend_code: req.body.friendcode
+       });
+  trader.save(function(err, newtrainer) {
+			if (err) {
+				console.log(err);
+				res.status(400).json({
+					error: "Couldn't add trainer."
+				});
+			}
+			res.json(newtrainer);
+		});
+});
+
+router.get('/getprofile', function(req,res){
+  Traders.findOne({
+      email: req.user.emails[0].value
+  }, function(err, doc) {
+      console.log("doc: ", doc);
+      res.json(doc);
+  });
 });
 
 module.exports = router;

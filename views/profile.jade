@@ -3,11 +3,11 @@
     .well.well-lg.add-button-space
       h2.text-center Trainer Profile
       h4 Trainer Name:
-      p.profile-space {{userName}}
+      p.profile-space {{trainerName}}
       h4 Friend Code:
-      a.profile-space(ng-click="loadPokemon()") ILOVEPIKACHU
-      h4.trainer-pokemon {{firstName}}'s Pokemon:
-      .row
-        .col-sm-2.all-each(ng-repeat="pokemon in userPokemon track by index")
-          img(src="{{pokemon.sprite}}")
-          | {{pokemon.name}}
+      a.profile-space(ng-click="loadPokemon()") {{friendCode}}
+      h4.trainer-pokemon {{trainerName}}'s Pokemon:
+//      .row
+//        .col-sm-2.all-each(ng-repeat="pokemon in userPokemon track by index")
+//          img(src="{{pokemon.sprite}}")
+//          | {{pokemon.name}}

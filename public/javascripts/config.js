@@ -25,6 +25,11 @@ angular.module("pokemonApp")
       templateUrl: '/views/allpokemon.html',
       controller: "allPokemonCtrl"
     })
+    .state('newuser', {
+      url: '/newuser',
+      templateUrl: '/views/newuser.html',
+      controller: "newUserCtrl"
+    })
     .state('profile', {
       url: '/profile',
       templateUrl: '/views/profile.html',

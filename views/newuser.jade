@@ -1,25 +1,23 @@
-
 doctype html
-html(ng-app="pokemonApp" ng-controller="navCtrl")
+html(ng-app="pokemonApp" ng-controller="newUserCtrl")
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
   body
     nav.navbar.navbar-inverse.navbar-fixed-top
-      #navbar.collapse.navbar-collapse
-        ul.nav.navbar-nav.navbar-left
-          li
-    
-    .row
-      .col-md-4
-        .well.well-lg.register-box
-          h1.register-text Pokemon Trader
-          p The best place to find that rare, shiny, custom-bred addition you've been looking for. 
-          a.btn.btn-info.btn-block.register-button-space(href="/auth/google")
-            | Register
-          a.btn.btn-info.btn-block.register-button-space(href="/auth/google")
-            | Login
+      #navbar.collapse.navbar-collapse.pokemon-menu
+
+    .container
+      .row
+        .col-xs-12
+          h1 Register as a Trainer
+            .row
+              .col-md-5
+                form(ng-submit='signup(user)')
+                  input.form-control.form-space(type='text', placeholder='Trainer Name', ng-model='user.trainername')
+                  input.form-control.form-space(type='text', placeholder='Friend Code', ng-model='user.friendcode')
+                  button.btn.btn-info.btn-block(type='submit') Sign Up
       script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js')
       script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
       script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js')
@@ -28,3 +26,4 @@ html(ng-app="pokemonApp" ng-controller="navCtrl")
       script(src='/javascripts/index.js')
       script(src='/javascripts/profileCtrl.js')
       script(src='/javascripts/settingsCtrl.js')
+      script(src='/javascripts/newUserCtrl.js')
