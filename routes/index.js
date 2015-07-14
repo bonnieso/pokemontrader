@@ -25,7 +25,7 @@ var traderSchema = mongoose.Schema({
 	}]
 });
 // var pokemonSchema = mongoose.Schema
-// var Traders = mongoose.model("Traders", traderSchema);
+ var Traders = mongoose.model("Traders", traderSchema);
 
 
 router.get('/logout', function(req, res) {
@@ -50,7 +50,7 @@ router.get('/', function (req, res, next) {
    console.log("in /", req.user);
    Traders.findOne({email: req.user.emails[0].value }, function(error, trader){
      if (error) {
-       console.log('error');
+       console.log(error);
        res.status(500);
        return;
      }
@@ -96,10 +96,28 @@ router.post("/updateuser", function(req, res) {
 
 router.post('/addnewuser', function(req, res){
   var trader = new Traders({
-         trainer_name: req.user.displayName,
-         email: req.user.emails[0].value
+         trainer_name: req.body.trainername,
+         email: req.user.emails[0].value,
+         friend_code: req.body.friendcode
        });
-  trader.save();
+  trader.save(function(err, newtrainer) {
+			if (err) {
+				console.log(err);
+				res.status(400).json({
+					error: "Couldn't add trainer."
+				});
+			}
+			res.json(newtrainer);
+		});
+});
+
+router.get('/getprofile', function(req,res){
+  Traders.findOne({
+      email: req.user.emails[0].value
+  }, function(err, doc) {
+      console.log("doc: ", doc);
+      res.json(doc);
+  });
 });
 
 module.exports = router;
