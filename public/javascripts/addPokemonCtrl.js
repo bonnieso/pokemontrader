@@ -1,6 +1,6 @@
 angular.module('pokemonApp')
-	.controller("addPokemonCtrl", function($scope, $rootScope, $http) {
-		$http.get('/pokedex').then(function(resp) {
+	.controller("addPokemonCtrl", function($scope, pokemonSvc, oneViewSvc, $state) {
+	pokemonSvc.pokedex().then(function(resp) {
 				$scope.pokedex = resp.data;
 			})
 			.catch(function(err) {
@@ -13,10 +13,12 @@ angular.module('pokemonApp')
 			angular.forEach($scope.pokedex, function(pokemon) {
 				// console.log("pokemon", pokemon);
 				if (pokemon.name === pokeName) {
-					$scope.availablePokemonz.push(pokemon)
+					$scope.availablePokemonz.push(pokemon);
 				}
 			});
 			// console.log($scope.availablePokemonz);
 		};
-
+    $scope.viewOnePoke = function(slug){
+      $state.go('onepokemon', {slug: slug});
+    };
 	});

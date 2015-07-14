@@ -21,8 +21,9 @@ angular.module("pokemonApp")
       templateUrl: '/views/login.html'
     })
     .state('allpokemon', {
-      url: '/allpokemon',
-      templateUrl: '/views/allpokemon.html'
+      url: "/pokemon",
+      templateUrl: '/views/allpokemon.html',
+      controller: "allPokemonCtrl"
     })
     .state('profile', {
       url: '/profile',
@@ -40,8 +41,9 @@ angular.module("pokemonApp")
       controller: 'addPokemonCtrl'
     })
     .state('onepokemon', {
-      url: '/onepokemon',
-      templateUrl: '/views/onepokemon.html'
+      url: '/onepokemon/:slug',
+      templateUrl: '/views/onepokemon.html',
+      controller: "onePokemonCtrl"
     });
   // .state('user', {
   // 	url: '',

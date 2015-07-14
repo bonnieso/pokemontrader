@@ -87,7 +87,7 @@
 				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
 			}]
 		}, {
-			"name": "Blastoise",
+			"name": "wartortle",
       "userID": "fake626975027589163244",
 			"pokemonID": "9",
 			"sprite": "http://pokeapi.co/media/img/8.png",
@@ -99,7 +99,7 @@
 				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
 			}]
 		}, {
-			"name": "caterpie",
+			"name": "Blastoise",
       "userID": "fake626975027589163244",
 			"pokemonID": "10",
 			"sprite": "http://pokeapi.co/media/img/9.png",
@@ -111,7 +111,7 @@
 				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
 			}]
 		}, {
-			"name": "Metapod",
+			"name": "Caterpie",
       "userID": "fake626975027589163244",
 			"pokemonID": "11",
 			"sprite": "http://pokeapi.co/media/img/10.png",
@@ -123,7 +123,7 @@
 				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
 			}]
 		}, {
-			"name": "Bulbasaur",
+			"name": "Metapod",
       "userID": "fake626975027589163244",
 			"pokemonID": "12",
 			"sprite": "http://pokeapi.co/media/img/11.png",
@@ -135,7 +135,7 @@
 				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
 			}]
 		}, {
-			"name": "Bulbasaur",
+			"name": "Butterfee",
       "userID": "fake626975027589163244",
 			"pokemonID": "13",
 			"sprite": "http://pokeapi.co/media/img/12.png",
@@ -147,10 +147,10 @@
 				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
 			}]
 		}, {
-			"name": "Bulbasaur",
+			"name": "Weedle",
       "userID": "fake626975027589163244",
 			"pokemonID": "14",
-			"sprite": "",
+			"sprite": "http://pokeapi.co/media/img/13.png",
 			"abilities": [{
 				"name": "chlorophyll",
 				"resource_uri": "http://pokeapi.co/api/v1/ability/34/"
@@ -159,10 +159,10 @@
 				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
 			}]
 		}, {
-			"name": "Bulbasaur",
+			"name": "Kakuna",
       "userID": "fake626975027589163244",
 			"pokemonID": "15",
-			"sprite": "",
+			"sprite": "http://pokeapi.co/media/img/14.png",
 			"abilities": [{
 				"name": "chlorophyll",
 				"resource_uri": "http://pokeapi.co/api/v1/ability/34/"
@@ -171,8 +171,9 @@
 				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
 			}]
 		}, {
-			"name": "Bulbasaur",
+			"name": "Beedrill",
       "userID": "fake626975027589163244",
+			"sprite": "http://pokeapi.co/media/img/15.png",
 			"pokemonID": "16",
 			"abilities": [{
 				"name": "chlorophyll",
@@ -182,8 +183,9 @@
 				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
 			}]
 		}, {
-			"name": "Bulbasaur",
+			"name": "Pidgey",
       "userID": "fake626975027589163244",
+			"sprite": "http://pokeapi.co/media/img/16.png",
 			"pokemonID": "17",
 			"abilities": [{
 				"name": "chlorophyll",
@@ -193,8 +195,9 @@
 				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
 			}]
 		}, {
-			"name": "Bulbasaur",
+			"name": "Pidgeotto",
       "userID": "fake626975027589163244",
+			"sprite": "http://pokeapi.co/media/img/17.png",
 			"pokemonID": "18",
 			"abilities": [{
 				"name": "chlorophyll",
@@ -204,8 +207,9 @@
 				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
 			}]
 		}, {
-			"name": "Bulbasaur",
+			"name": "Pidgeot",
       "userID": "fake626975027589163244",
+			"sprite": "http://pokeapi.co/media/img/18.png",
 			"pokemonID": "19",
 			"abilities": [{
 				"name": "chlorophyll",
@@ -215,8 +219,9 @@
 				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
 			}]
 		}, {
-			"name": "Bulbasaur",
+			"name": "Rattata",
       "userID": "fake626975027589163244",
+			"sprite": "http://pokeapi.co/media/img/19.png",
 			"pokemonID": "20",
 			"abilities": [{
 				"name": "chlorophyll",
@@ -226,8 +231,9 @@
 				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
 			}]
 		}, {
-			"name": "Bulbasaur",
+			"name": "Raticate",
       "userID": "fake626975027589163244",
+			"sprite": "http://pokeapi.co/media/img/20.png",
 			"pokemonID": "21",
 			"abilities": [{
 				"name": "chlorophyll",
@@ -237,8 +243,9 @@
 				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
 			}]
 		}, {
-			"name": "Bulbasaur",
+			"name": "Spearow",
       "userID": "105626975027589163244",
+			"sprite": "http://pokeapi.co/media/img/21.png",
 			"pokemonID": "22",
 			"abilities": [{
 				"name": "chlorophyll",
@@ -248,8 +255,9 @@
 				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
 			}]
 		}, {
-			"name": "Bulbasaur",
+			"name": "Fearow",
       "userID": "fake626975027589163244",
+			"sprite": "http://pokeapi.co/media/img/22.png",
 			"pokemonID": "23",
 			"abilities": [{
 				"name": "chlorophyll",
@@ -259,9 +267,10 @@
 				"resource_uri": "http://pokeapi.co/api/v1/ability/65/"
 			}]
 		}, {
-			"name": "Bulbasaur",
+			"name": "Ekans",
 			"pokemonID": "24",
       "userID": "fake626975027589163244",
+			"sprite": "http://pokeapi.co/media/img/23.png",
 			"abilities": [{
 				"name": "chlorophyll",
 				"resource_uri": "http://pokeapi.co/api/v1/ability/34/"

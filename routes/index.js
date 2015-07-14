@@ -35,9 +35,20 @@ router.get('/logout', function(req, res) {
 	// res.render('/register');
 });
 
-// router.get("/pokedex/:identity", function(req, res){
-//   res.json(pokedex.pokemon.identity);
-// });
+router.get("/onepokemon/:slug", function(req, res){
+	console.log("backend hit");
+	console.log("req:",req.params);
+	var pokedex = JSON.parse(pokedex.pokemon);
+	console.log(pokedex);
+  pokedex.forEach(function(pokemon){
+		if(pokemon.name === req.params.slug){
+			console.log("this Pokemon:", pokemon);
+			res.json(pokemon);
+		}
+		return;
+	})
+	// return;
+});
 
 router.get('/pokedex', function(req, res){
   console.log("pokedex hit");

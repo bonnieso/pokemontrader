@@ -7,6 +7,6 @@
 .well.well-lg.add-button-space.text-center.slimshady
   h1 Pokemon Available for Trade:
   .row
-    .col-sm-2.all-each(ng-repeat="pokemon in pokedex | filter: pokemonName")
-      img(src="{{pokemon.sprite}}")
+    .col-sm-2.all-each.slimshady(ng-repeat="pokemon in pokedex | filter: pokemonName" ng-click="viewOnePoke(pokemon.name)")
+      img.sprites(src="{{pokemon.sprite}}")
       | {{pokemon.name}}

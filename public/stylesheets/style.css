@@ -40,3 +40,10 @@ a {
 .well.well-lg.add-button-space.text-center.ng-scope {
   background-color: rgba(255, 255, 255, .4);
 }
+.slimshady:hover{
+  background-color: #ccc;
+}
+.sprites{
+  height: 120px;
+  width: 120px;
+}
